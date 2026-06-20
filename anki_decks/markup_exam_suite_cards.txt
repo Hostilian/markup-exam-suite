@@ -1,0 +1,83 @@
+# ============================================================
+# Markup Languages (ETE1AE) — CZU Prague — Anki Import Deck
+# HTML5 | XML/XSD | DTD | JSON | XPath/XSLT | HTTP/REST | CSV/TeX/SVG — 80 exam-targeted cards
+# Format: Front[TAB]Back[TAB]Tag
+# Import in Anki: File > Import > select this file
+# Fields: Front | Back | Tag (3 fields, tab-separated)
+# ============================================================
+
+Who created HTML and where?	HTML was created by <b>Tim Berners-Lee</b> at <b>CERN</b> in 1989.	html
+Correct DOCTYPE declaration for HTML5	<code>&lt;!DOCTYPE html&gt;</code> — written as the very first line of an HTML5 document.	html
+Current HTML standards	<b>HTML5</b> is the latest standard. HTML 4.01 is also considered 'current'.	html
+Which tags are allowed inside &lt;head&gt;?	<code>&lt;title&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;script&gt;</code>	html
+All 7 HTML5 semantic elements	<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code>	html
+Difference: &lt;section&gt; vs &lt;article&gt;	<b>&lt;article&gt;</b> = standalone content that makes sense on its own (news article, blog post).<br><b>&lt;section&gt;</b> = thematic grouping, does NOT make sense standalone.	html
+What can go inside &lt;footer&gt;?	<code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, <code>&lt;a&gt;</code> and more — any relevant footer content.	html
+What can go inside &lt;header&gt;?	<code>div, nav, span, ol, ul, li, p, img, h1–h6</code> — most block and inline elements.	html
+HTML5 tag for navigation	<code>&lt;nav&gt;</code> wraps navigation menus and links.	html
+HTML5 tag for audio	<code>&lt;audio&gt;</code>	html
+HTML5 tag for video	<code>&lt;video&gt;</code>	html
+HTML5 table element	<code>&lt;table&gt;</code> — contains <code>&lt;tr&gt;</code> (rows), <code>&lt;td&gt;</code> (cells), <code>&lt;th&gt;</code> (header cells).	html
+HTML5 ordered vs unordered list	<b>Ordered</b>: <code>&lt;ol&gt;</code> — numbered items.<br><b>Unordered</b>: <code>&lt;ul&gt;</code> — bulleted items. Both contain <code>&lt;li&gt;</code>.	html
+How to create a link in HTML5?	Use the anchor tag with <code>href</code>: <code>&lt;a href="URL"&gt;link text&lt;/a&gt;</code>	html
+Attribute used to link a CSS file	<code>href</code> attribute on the <code>&lt;link&gt;</code> tag:<br><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>	html
+Elements used inside an HTML5 form	<code>&lt;input&gt;</code>, <code>&lt;form&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code>	html
+HTML5 Microdata specific attributes	<code>itemscope</code> (defines scope boundary) and <code>itemtype</code> (vocabulary URL).<br>Used to embed structured metadata for search engines.	html
+Benefits of semantics and structured data on web pages	1. Improved display of search results (rich snippets)<br>2. Better search engine indexing (SEO)<br>3. Improved accessibility for screen readers/reading devices	html
+Google tools for working with structured data	1. <b>Google Structured Data Markup Helper</b><br>2. <b>Google Structured Data Testing Tool</b>	html
+What are HTML semantics?	They give <b>meaning</b> to code — e.g. using <code>&lt;article&gt;</code> instead of a generic <code>&lt;div&gt;</code>. Help search engines and screen readers understand page structure.	html
+XML was created by simplifying which language?	<b>SGML</b> (Standard Generalized Markup Language)	xml
+Which organization standardizes XML?	<b>W3C</b> — World Wide Web Consortium	xml
+What must a well-formed XML document have?	1. Exactly <b>ONE root element</b><br>2. All tags must be properly closed<br>3. Tags are case-sensitive<br>4. Attribute values must be in quotes	xml
+Difference: well-formed vs valid XML	<b>Well-formed</b> = follows basic XML syntax only.<br><b>Valid</b> = well-formed + complies with a DTD or XSD schema.<br><i>Valid is ALWAYS well-formed; well-formed is NOT always valid.</i>	xml
+XML states — what can XML be?	XML can be: <b>well-formed</b> or <b>valid</b>. These are the only two correctness states.	xml
+What can XML elements contain?	Elements can: have <b>attributes</b>, contain nested <b>child elements</b>, have <b>textual content</b>, or be empty.	xml
+XML element naming rules	• Can include: letters, numbers, hyphens, underscores, periods, colons (with namespaces)<br>• <b>CANNOT start with a number</b><br>• Case-sensitive	xml
+XML attribute rules	• <b>Must have a value</b><br>• Values must be in single OR double quotes<br>• Can be listed in <b>any order</b> within the element tag	xml
+What are XML Namespaces used for?	To <b>prevent naming conflicts</b> between element/attribute names when combining XML from different sources.	xml
+Purposes of using XML	1. Define structure of documents<br>2. Define <b>custom markup languages</b><br>3. Transfer data between different applications and systems	xml
+SVG files — what format and image type?	SVG uses <b>XML</b> format. Represents image data <b>textually</b>. Produces <b>Vector graphics</b> (scalable, resolution-independent).	xml
+DTD definition	<b>Document Type Definition</b> — a set of rules describing elements, attributes, structure and content of an XML document. Used for XML validation.	xml
+xs:simpleType vs xs:complexType	<b>xs:simpleType</b> = define custom type based on existing simple type (adds restrictions/facets)<br><b>xs:complexType</b> = element with nested child elements OR attributes	xsd
+xs:restriction facets for STRING length	<code>xs:minLength</code> and <code>xs:maxLength</code>	xsd
+xs:restriction facets for NUMERIC values	<code>xs:minInclusive</code> and <code>xs:maxInclusive</code>	xsd
+xs:restriction facets for limiting choices and patterns	<code>xs:enumeration</code> — fixed list of allowed values<br><code>xs:pattern</code> — restrict using a regex pattern	xsd
+All 4 xs:restriction facets tested on exam	<code>xs:minLength</code> / <code>xs:maxLength</code> (strings)<br><code>xs:minInclusive</code> / <code>xs:maxInclusive</code> (numbers)<br><code>xs:enumeration</code> (fixed choices)<br><code>xs:pattern</code> (regex)	xsd
+XSD syntax for unlimited occurrences	<code>minOccurs="0" maxOccurs="unbounded"</code><br>Example: <code>&lt;xs:element name="item" type="xs:string" minOccurs="0" maxOccurs="unbounded"/&gt;</code>	xsd
+XSD Design Patterns — main purpose	Creating a <b>consistent and maintainable structure</b> for XML Schema definitions.	xsd
+XSLT Design Patterns — goal	Creating a <b>consistent and maintainable structure</b> for XML transformations.	xsd
+DocBook — purpose and schema	For writing <b>technical documentation and books</b> in XML format.<br>Latest version defined using <b>RelaxNG</b> with XSD provided.	xsd
+RelaxNG definition	A schema language for XML — simpler than XSD — for defining XML document structures and validating against them.	xsd
+XPath: root symbol	<code>/</code> — represents the root of the XML document (start of absolute path)	xpath
+XPath: absolute vs relative path	<b>Absolute</b>: starts from root <code>/</code> (e.g. <code>/bookstore/book</code>)<br><b>Relative</b>: starts from current node <code>.</code> (e.g. <code>//book</code>)	xpath
+XPath: select attributes	<code>@</code> symbol — e.g. <code>//@id</code> selects all id attributes in the document	xpath
+XPath: select nodes anywhere in document	<code>//</code> — matches nodes anywhere, regardless of their position in hierarchy	xpath
+Technologies that use XPath	<b>XPointer</b>, <b>XSLT</b>, <b>XQuery</b>	xpath
+What does XSLT do?	<b>Extensible Stylesheet Language Transformations</b> — transforms XML into other formats: HTML, XML, CSS, plain text (possibly JSON).	xpath
+XSLT conditional processing elements	<code>&lt;xsl:if&gt;</code> — simple condition<br><code>&lt;xsl:choose&gt;</code> + <code>&lt;xsl:when&gt;</code> + <code>&lt;xsl:otherwise&gt;</code> — switch/case logic	xpath
+Possible XSLT output formats	XML, HTML, CSS — and potentially JSON. XSLT is not limited to one output type.	xpath
+JSON data types — list all 6 (and what is NOT included)	<b>String, Number, Boolean, Null, Object, Array</b><br><i>⚠ <code>date</code> is NOT a native JSON type!</i>	json
+Empty array and empty object in JSON	Empty array: <code>[]</code><br>Empty object: <code>{}</code>	json
+JSON basic structures	<b>Object</b> (key-value pairs in <code>{}</code>) and <b>Array</b> (ordered list in <code>[]</code>)	json
+Purpose of JSON Schema	1. <b>Describing the structure</b> of JSON data<br>2. <b>Validating</b> JSON data against defined rules	json
+JSON Schema: defining object properties	<code>properties</code> keyword (named properties) and <code>patternProperties</code> (regex-matched names)	json
+JSON Schema: unique items in array	<code>uniqueItems: true</code>	json
+JSON Schema: string length constraints	<code>minLength</code> and <code>maxLength</code>	json
+JSON Schema: maximum number of object properties	<code>maxProperties</code>	json
+XML and JSON — what do they share?	Both are: text-based formats, used for data storage and transmission, used for application configuration, used for serializing objects.	json
+Which formats are text-based?	<b>JSON</b>, <b>CSV</b>, and <b>XML</b> are all text-based.	json
+HTTP — what is it?	<b>HyperText Transfer Protocol</b> — a protocol for <b>transferring data between a client and a server</b>.	http
+HTTP methods that MANIPULATE data (unsafe)	<b>POST</b> (create), <b>PUT</b> (replace/update), <b>DELETE</b> (remove), <b>PATCH</b> (partial update)<br><i>GET is safe — read-only, does NOT modify server data.</i>	http
+HTTP status codes — 200, 201, 204	<b>200</b> OK — success<br><b>201</b> Created — resource created (after POST)<br><b>204</b> No Content — success, no body returned	http
+HTTP status code 500	<b>500 Internal Server Error</b> — unexpected failure on the server side. 5xx = server errors.	http
+REST abbreviation and principles	<b>Representational State Transfer</b><br>Principles: <b>Statelessness</b>, <b>Client-Server</b>, <b>Cacheability</b>, <b>Uniform Interface</b>	http
+REST API HTTP verbs	<b>GET</b> (read), <b>POST</b> (create), <b>PUT</b> (replace), <b>PATCH</b> (partial update), <b>DELETE</b> (remove)	http
+WebSockets advantage over HTTP	<b>Bidirectional (full-duplex) communication</b> — both sides send messages at any time.<br>HTTP = request-response only; WebSockets = persistent real-time channel.	http
+CSV — programs that can open/edit it	<b>Notepad</b> (plain text), <b>Microsoft Excel</b>, <b>LibreOffice Calc</b>	formats
+CSV delimiter characters	Commonly: <b>commas</b> and <b>tabs</b>	formats
+CSV value quoting rules	Values <b>can be enclosed in quotes</b> OR <b>without quotes</b> — both are valid.	formats
+CSV advantages	<b>Universality</b> (opens anywhere), <b>space efficiency</b>, <b>simple syntax</b>	formats
+Which organization standardizes CSV?	<b>None</b> — CSV has no official standardizing organization.	formats
+CSV — common use case	Data storage and exchange for <b>large datasets consisting of rows and columns</b>.	formats
+What is TeX?	A language for creating <b>professional text documents</b>. Used for scientific publications requiring precise layout. LaTeX is built on TeX.	formats
+SVG — image type and data representation	SVG = <b>Vector graphics</b>. Data is represented <b>textually</b> (XML-based paths and coordinates, not binary).	formats
